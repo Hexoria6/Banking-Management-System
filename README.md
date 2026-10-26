@@ -34,11 +34,3 @@ A Python-based Banking Management System designed to demonstrate banking operati
 4. Open the project folder in VS Code.
 5. Run:
     python "Banking Management System.py"
-
-🎯 Project Objective
-
-To demonstrate practical Python programming skills, GUI development, database integration, and data visualization.
-
-⸻
-
-Developed as a Python programming project.
