@@ -521,7 +521,7 @@ class BankingSystem:
 
         tk.Label(
             self.root,
-            text=f"Current Balance: â¹{balance:.2f}",
+            text=f"Current Balance: {balance:.2f}",
             font=("Arial", 18, "bold")
         ).pack(pady=15)
 
@@ -634,7 +634,7 @@ class BankingSystem:
 
             messagebox.showinfo(
                 "Success",
-                f"â¹{amount:.2f} deposited successfully."
+                f"Rs{amount:.2f} deposited successfully."
             )
 
             self.dashboard()
@@ -748,7 +748,7 @@ class BankingSystem:
 
             messagebox.showinfo(
                 "Success",
-                f"â¹{amount:.2f} withdrawn successfully."
+                f"Rs{amount:.2f} withdrawn successfully."
             )
 
             self.dashboard()
@@ -952,7 +952,7 @@ class BankingSystem:
 
             messagebox.showinfo(
                 "Success",
-                f"â¹{amount:.2f} transferred successfully."
+                f"Rs{amount:.2f} transferred successfully."
             )
 
             self.dashboard()
@@ -998,7 +998,7 @@ class BankingSystem:
 
             messagebox.showinfo(
                 "Account Balance",
-                f"Your current balance is:\n\nâ¹{result[0]:.2f}"
+                f"Your current balance is:\n\n Rs{result[0]:.2f}"
             )
 
 
@@ -1103,7 +1103,7 @@ class BankingSystem:
                 values=(
                     row[0],
                     row[1],
-                    f"â¹{row[2]:.2f}",
+                    f"Rs{row[2]:.2f}",
                     row[3],
                     row[4]
                 )
@@ -1276,10 +1276,10 @@ class BankingSystem:
 
         message = (
             f"Total Transactions: {total_transactions}\n\n"
-            f"Total Transaction Amount: â¹{total_amount:.2f}\n\n"
-            f"Average Transaction: â¹{average_amount:.2f}\n\n"
-            f"Total Deposits: â¹{total_deposit:.2f}\n\n"
-            f"Total Withdrawals: â¹{total_withdrawal:.2f}"
+            f"Total Transaction Amount: Rs {total_amount:.2f}\n\n"
+            f"Average Transaction: Rs{average_amount:.2f}\n\n"
+            f"Total Deposits: Rs{total_deposit:.2f}\n\n"
+            f"Total Withdrawals: Rs{total_withdrawal:.2f}"
         )
 
 
@@ -1313,7 +1313,7 @@ class BankingSystem:
         )
 
         plt.ylabel(
-            "Total Amount (â¹)"
+            "Total Amount (Rs)"
         )
 
         plt.xticks(
